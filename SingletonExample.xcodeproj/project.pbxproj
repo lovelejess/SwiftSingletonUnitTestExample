@@ -12,6 +12,8 @@
 		16D600062669D26600C391D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D600042669D26600C391D2 /* LaunchScreen.storyboard */; };
 		16D600112669D26600C391D2 /* SingletonExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D600102669D26600C391D2 /* SingletonExampleTests.swift */; };
 		16D6001C2669D26600C391D2 /* SingletonExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6001B2669D26600C391D2 /* SingletonExampleUITests.swift */; };
+		16D6002A2669D28B00C391D2 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D600292669D28B00C391D2 /* Singleton.swift */; };
+		16D6002C2669D38D00C391D2 /* FakeSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6002B2669D38D00C391D2 /* FakeSingleton.swift */; };
 		16D6FFFA2669D26300C391D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6FFF92669D26300C391D2 /* AppDelegate.swift */; };
 		16D6FFFC2669D26300C391D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6FFFB2669D26300C391D2 /* SceneDelegate.swift */; };
 		16D6FFFE2669D26300C391D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6FFFD2669D26300C391D2 /* ViewController.swift */; };
@@ -45,6 +47,8 @@
 		16D600172669D26600C391D2 /* SingletonExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D6001B2669D26600C391D2 /* SingletonExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonExampleUITests.swift; sourceTree = "<group>"; };
 		16D6001D2669D26600C391D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D600292669D28B00C391D2 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		16D6002B2669D38D00C391D2 /* FakeSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSingleton.swift; sourceTree = "<group>"; };
 		16D6FFF62669D26300C391D2 /* SingletonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingletonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D6FFF92669D26300C391D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16D6FFFB2669D26300C391D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 		16D6000F2669D26600C391D2 /* SingletonExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				16D6002B2669D38D00C391D2 /* FakeSingleton.swift */,
 				16D600102669D26600C391D2 /* SingletonExampleTests.swift */,
 				16D600122669D26600C391D2 /* Info.plist */,
 			);
@@ -124,6 +129,7 @@
 				16D600022669D26600C391D2 /* Assets.xcassets */,
 				16D600042669D26600C391D2 /* LaunchScreen.storyboard */,
 				16D600072669D26600C391D2 /* Info.plist */,
+				16D600292669D28B00C391D2 /* Singleton.swift */,
 			);
 			path = SingletonExample;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D6002C2669D38D00C391D2 /* FakeSingleton.swift in Sources */,
 				16D600112669D26600C391D2 /* SingletonExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D6FFFE2669D26300C391D2 /* ViewController.swift in Sources */,
+				16D6002A2669D28B00C391D2 /* Singleton.swift in Sources */,
 				16D6FFFA2669D26300C391D2 /* AppDelegate.swift in Sources */,
 				16D6FFFC2669D26300C391D2 /* SceneDelegate.swift in Sources */,
 			);

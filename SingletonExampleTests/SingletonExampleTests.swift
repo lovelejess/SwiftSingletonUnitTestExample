@@ -8,26 +8,23 @@
 import XCTest
 @testable import SingletonExample
 
+/// Tests`SingletonConsumer`
 class SingletonExampleTests: XCTestCase {
+    
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_doSomethingCoolWithNonMatchingAnimalValues_setsAnimal_nil() {
+        let singletonConsumer = SingletonConsumer(singleton: FakeSingleton())
+        singletonConsumer.doSomethingCool(with: "spiders")
+        let actual = singletonConsumer.animal
+        XCTAssertNil(actual)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test_doSomethingCoolWithCats_setsAnimalToCats() {
+        let singletonConsumer = SingletonConsumer(singleton: FakeSingleton())
+        singletonConsumer.doSomethingCool(with: "cats")
+        let actual = singletonConsumer.animal
+        let expected = Animal.cats.rawValue
+        XCTAssertEqual(actual, expected)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
+
